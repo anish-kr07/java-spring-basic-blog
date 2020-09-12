@@ -11,10 +11,4 @@ public class BlogApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(BlogApplication.class, args);
 	}
-
-	@RequestMapping("/")
-	public String listPosts(ModelMap modelMap) {
-		modelMap.put("title","Blog Post 1");
-		return "home";
-	}
 }
